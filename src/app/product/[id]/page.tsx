@@ -11,7 +11,7 @@ interface ProductPageProps {
 }
 
 const ProductPage = ({ params }: ProductPageProps) => {
-  const product = productsMock.find((p) => p.id === params.id);
+  const product = productsMock.find((p) => p.id === params?.id);
 
   if (!product) {
     notFound();
