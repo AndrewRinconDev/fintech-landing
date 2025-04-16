@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fintech Landing Page
 
-## Getting Started
+Landing page para una fintech que muestra un catálogo de productos financieros con filtros y detalles.
 
-First, run the development server:
+## Características
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Catálogo de productos financieros con filtros por categoría
+- Páginas de detalle para cada producto
+- Diseño responsive (Mobile First)
+- Tipado estricto con TypeScript
+- Combinación de TailwindCSS y Styled Components
+- Componentes reutilizables
+- Accesibilidad (a11y) implementada
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologías
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js (App Router)
+- TypeScript
+- TailwindCSS
+- Styled Components
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Instalación
 
-## Learn More
+1. Clonar el repositorio
+2. Instalar dependencias:
+   ```bash
+   npm install
+   # o
+   yarn install
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Respuestas a Preguntas Complementarias
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 1. Criterios para diseñar la UI de productos financieros
+**Claridad**: Información financiera debe ser fácil de entender
 
-## Deploy on Vercel
+**Confianza**: Diseño profesional que inspire seguridad
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Jerarquía visual**: Destacar información importante como tasas de interés
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Accesibilidad**: Contraste adecuado, etiquetas ARIA, navegación por teclado
+
+**Responsividad**: Funcional en todos los dispositivos
+
+## 2. Decisión entre Tailwind y Styled Components
+**TailwindCSS**: Para layout general, estilos utilitarios y prototipado rápido
+
+**Styled Components**: Para componentes reutilizables con lógica de estilo compleja
+
+**Regla**: Tailwind para estilos globales y layout, Styled Components para componentes UI específicos
+
+## 3. Escalabilidad en aplicación real de banca digital
+Implementar autenticación segura
+
+Integración con APIs reales (GraphQL/REST)
+
+Estado global (Redux/Context)
+
+Microfrontends para diferentes áreas
+
+Pruebas automatizadas (unitarias, integración, E2E)
+
+CI/CD pipeline
+
+Monitoreo de rendimiento
+
+## 4. Herramientas para rendimiento y monitoreo
+**Rendimiento**: Next.js Analytics, Lighthouse, Web Vitals
+
+**Monitoreo**: Sentry, LogRocket, Datadog
+
+**Optimización**: Image Optimization de Next.js, CDN, caching
+
+**Bundling**: Análisis de bundle con Webpack Bundle Analyzer
