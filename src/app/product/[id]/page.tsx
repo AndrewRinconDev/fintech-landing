@@ -6,13 +6,13 @@ import { productsMock } from '@/utils/__mocks__/productsData';
 import Link from 'next/link';
 
 interface ProductPageProps {
-  params: {
-    id: string;
-  };
+  params: Promise<{ id: string }>
 }
 
-const ProductPage = ({ params }: ProductPageProps) => {
-  const product = productsMock.find((p) => p.id === params?.id);
+const ProductPage = async ({ params }: ProductPageProps) => {
+  // read route params
+  const { id } = await params
+  const product = productsMock.find((p) => p.id === id);
 
   if (!product) {
     notFound();
