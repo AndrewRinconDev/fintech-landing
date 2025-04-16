@@ -12,9 +12,9 @@ const HomePage = () => {
   const { products, loading, selectedCategory, setSelectedCategory } = useProducts();
 
   return (
-    <main className="container mx-auto px-4 py-8">
+    <main className="container mx-auto px-4 py-8 max-w-[1200px]">
       <section id="products" className="mb-12">
-        <h1 className="text-3xl font-bold text-gray-800 mb-6">Nuestros Productos Financieros</h1>
+        <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">Nuestros Productos Financieros</h1>
 
         <FilterTabs
           selectedCategory={selectedCategory}

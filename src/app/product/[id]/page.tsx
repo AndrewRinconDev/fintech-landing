@@ -18,7 +18,7 @@ const ProductPage = ({ params }: ProductPageProps) => {
   }
 
   return (
-    <main className="container mx-auto px-4 py-8">
+    <main className="container mx-auto px-4 py-8 max-w-[1200px]">
       <div className="mb-6">
         <a
           href="/"
