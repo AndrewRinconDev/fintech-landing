@@ -11,7 +11,7 @@ export const useProducts = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simular carga de API
+    // Simulate fetching data from an API
     const timer = setTimeout(() => {
       setProducts(productsMock);
       setFilteredProducts(productsMock);

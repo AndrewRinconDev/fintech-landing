@@ -22,7 +22,7 @@ export const productsMock: IFinancialProduct[] = [
       'App móvil con reconocimiento facial'
     ],
     monthlyFee: 0,
-    imageUrl: '/images/savings-account.png',
+    imageUrl: '/images/savings-account.jpg',
     recommended: true
   },
   {
@@ -133,7 +133,7 @@ export const productsMock: IFinancialProduct[] = [
       'Seguro de vida gratuito por $100,000',
       'Soporte prioritario 24/7'
     ],
-    imageUrl: '/images/payroll-account.png',
+    imageUrl: '/images/payroll-account.jpg',
     recommended: false
   },
   {
@@ -244,7 +244,7 @@ export const productsMock: IFinancialProduct[] = [
       'Metas de ahorro visuales',
       'Notificaciones instantáneas'
     ],
-    imageUrl: '/images/youth-account.png',
+    imageUrl: '/images/youth-account.jpg',
     recommended: true
   },
   {
