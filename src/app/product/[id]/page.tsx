@@ -1,8 +1,9 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
-import Header from '@/components/Header/Header';
+
 import ProductDetail from '@/components/ProductDetail/ProductDetail';
 import { productsMock } from '@/utils/__mocks__/productsData';
+import Link from 'next/link';
 
 interface ProductPageProps {
   params: {
@@ -20,7 +21,7 @@ const ProductPage = ({ params }: ProductPageProps) => {
   return (
     <main className="container mx-auto px-4 py-8 max-w-[1200px]">
       <div className="mb-6">
-        <a
+        <Link
           href="/"
           className="text-blue-600 hover:text-blue-800 flex items-center"
           aria-label="Volver al catálogo de productos"
@@ -34,7 +35,7 @@ const ProductPage = ({ params }: ProductPageProps) => {
             />
           </svg>
           Volver al catálogo
-        </a>
+        </Link>
       </div>
 
       <ProductDetail product={product} />
