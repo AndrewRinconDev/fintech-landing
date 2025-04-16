@@ -19,7 +19,7 @@
   }
 }
 
-/* Animaciones personalizadas */
+/* Custom Animation for fade-in effect */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }

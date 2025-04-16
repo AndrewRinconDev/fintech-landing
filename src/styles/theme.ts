@@ -46,7 +46,7 @@ export const theme: DefaultTheme = {
   }
 };
 
-// Extender el tipo DefaultTheme para TypeScript
+// Extend styled-components DefaultTheme interface
 declare module 'styled-components' {
   export interface DefaultTheme {
     colors: {

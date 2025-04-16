@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 interface TabButtonProps {
-  $isActive: boolean; // Convención: usar $ para props que no son del DOM
+  $isActive: boolean; // Convention: use $ for props that are not part of the DOM attributes
 }
 
 export const TabContainer = styled.div`
